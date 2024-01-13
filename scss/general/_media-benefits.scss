@@ -1,0 +1,123 @@
+@import "variables";
+@import "mixins";
+
+@media (max-width: 768px) {
+  .benefits {
+    height: auto!important;
+
+    .benefits-container {
+      max-width: 100%;
+      padding: 25px;
+      @include benefitsContainer;
+
+      .benefit-one {
+        max-width: 100%;
+        flex-direction: column-reverse;
+        height: 750px;
+        margin-top: 0;
+        padding: 45px;
+
+        .benefits-text {
+          width: 100%;
+          height: 50%;
+          padding: 35px;
+          justify-content: flex-start;
+          h3 {
+            @include benefitsH3;
+          }
+          p {
+            @include benefitsP;
+          }
+          .horizontal-line {
+            display: none;
+          }
+        }
+        .benefits-macbook {
+          height: 75%;
+          img {
+            width: auto;
+            height: 75%;
+            margin: 0 auto;
+          }
+          .geo-red {
+            left: 330px;
+            top: 25px;
+          }
+        }
+      }
+      .benefit-two {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        padding: 45px;
+
+        .benefits-text {
+          width: 100%;
+          height: 50%;
+          padding: 35px;
+          justify-content: flex-start;
+
+          h3 {
+            @include benefitsH3;
+            width: 80%;
+            line-height: inherit;
+          }
+          p {
+            @include benefitsP;
+          }
+          .horizontal-line {
+            display: none;
+          }
+        }
+      }
+
+      .benefit-three {
+        margin-top: 37px;
+        margin-bottom: 50px;
+        width: 100%;
+        flex-direction: column;
+        height: 850px;
+
+        .benefits-text {
+          width: 100%;
+          height: 50%;
+          padding: 35px;
+          justify-content: flex-start;
+
+          h3 {
+            @include benefitsH3;
+            width: 70%;
+            line-height: inherit;
+          }
+          p {
+            @include benefitsP;
+          }
+          .horizontal-line {
+            display: none;
+          }
+        }
+        .benefits-trumpet {
+          border-radius: 5px;
+          height: 50%;
+          width: 100%;
+
+          .geo-green {
+            width: 100%;
+          }
+          .trumpet-container {
+            width: 100%;
+            height: auto;
+
+            img {
+              height: auto;
+              width: 90%;
+              background-size: cover;
+              top: 52%;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,61 @@
+@import "variables";
+
+@media (max-width: $mobile) {
+  .nav-mobile {
+    height: 100vh;
+    margin-bottom: 135px;
+    .header {
+      margin-bottom: 0;
+      height: 10%;
+      .header-container {
+        height: 100%;
+        p {
+          font-size: 2.5em;
+          padding-left: 30px;
+        }
+        ul {
+          display: none;
+        }
+      }
+      .web-nav {
+        display: none;
+      }
+    }
+  }
+
+  .opening {
+    width: 100%;
+
+    .opening-title {
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      h1 {
+        font-size: 4.5em;
+        line-height: inherit;
+        margin-bottom: 30px;
+      }
+      p {
+        padding: 0 145px;
+        font-size: 1.5em;
+        line-height: 1.5em;
+        font-weight: 300;
+        margin-bottom: 60px;
+      }
+      button {
+        font-size: 1.5em;
+        padding: 40px 150px;
+        border-radius: 80px;
+      }
+    }
+    .img-container {
+      height: 40vh;
+      .opening-img {
+        background-size: cover;
+        height: 100%;
+        width: auto;
+      }
+    }
+  }
+}

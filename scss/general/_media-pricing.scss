@@ -1,0 +1,29 @@
+@import "mixins";
+@import "variables";
+
+@media (max-width: $mobile) {
+  .bottom-section {
+    height: auto!important;
+    .pricing {
+      .pricing-p {
+        font-size: 3em;
+        line-height: inherit;
+        margin-bottom: 10px;
+      }
+    }
+    .price-list-container {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 25px;
+      flex-direction: column;
+      height: auto!important;
+
+      .price-list {
+        .basic {
+          width: 80%;
+          height: auto;
+        }
+      }
+    }
+  }
+}

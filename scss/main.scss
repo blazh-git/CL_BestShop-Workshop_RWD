@@ -1,0 +1,709 @@
+@import "general/mixins";
+
+@import "general/reset";
+@import "general/variables";
+@import "general/layout";
+
+@import "general/media-general";
+@import "general/media-nav";
+@import "general/media-sales";
+@import "general/media-benefits";
+@import "general/media-pricing";
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background: $color-light 0 0 no-repeat padding-box;
+  box-shadow: 0 3px 6px #00000029;
+  margin-bottom: 130px;
+}
+
+.header-container {
+  width: 1352px;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.web-title {
+  text-align: left;
+  font: normal normal 300 32px/37px Raleway;
+  color: #08A6E4;
+}
+
+.web-nav {
+  display: flex;
+}
+
+.web-nav-elements {
+  text-transform: uppercase;
+  text-align: center;
+  font: normal normal bold 11px/15px Open Sans;
+  letter-spacing: 3px;
+  margin-left: 95px;
+}
+
+.web-nav-elements a {
+  text-decoration: none;
+  color: $accent-grey;
+}
+
+.web-nav-elements a:hover {
+  color: $color-dark;
+  border-bottom: 4px solid $color-primary;
+  padding: 0 0 24px;
+  width: 84px;
+}
+
+.opening {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opening-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.opening-img {
+  height: auto;
+  width: 100%;
+}
+
+.opening-title h1 {
+  text-align: center;
+  font: normal normal normal 49px/57px Raleway;
+  color: $color-dark;
+  margin-bottom: 20px;
+}
+
+.opening-title p {
+  text-align: center;
+  font: normal normal normal 16px/22px Open Sans;
+  color: $color-dark;
+  margin-bottom: 38px;
+}
+
+.opening-title button {
+  padding: 22px 157px;
+  border: none;
+  background: #08A6E4 0 0 no-repeat padding-box;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+  border-radius: 40px;
+  text-align: center;
+  text-decoration: none;
+  font: normal normal bold 16px/22px Open Sans;
+  color: $color-light;
+}
+
+.opening-title button:hover {
+  cursor: pointer;
+}
+
+.opening img {
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+.sales {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-light;
+  margin-top: 100px;
+  margin-bottom: 120px;
+}
+
+.sales h2 {
+  text-align: center;
+  font: normal normal normal 36px/42px Raleway;
+  color: $color-dark;
+  margin-bottom: 101px;
+}
+
+.sales-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sales-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 167px;
+  margin: 0 110px;
+}
+
+.sales-element .circle {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.sales-element .circle.red {
+  background-color: $accent-red;
+}
+
+.sales-element .circle.blue {
+  background-color: $color-primary;
+}
+
+.sales-element .circle.green {
+  background-color: $accent-green;
+}
+
+.sales-element .icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.sales-element .icon.one {
+  height: 52px;
+  left: 32px;
+}
+.sales-element .icon.two {
+  height: 36px;
+  left: 22px;
+}
+.sales-element .icon.three {
+  height: 48px;
+  left: 32px;
+}
+
+.p-bold {
+  text-align: center;
+  font: normal normal 800 20px/24px Raleway;
+  letter-spacing: 6px;
+  color: $color-dark;
+  margin-top: 14px;
+}
+
+.p-normal {
+  text-align: center;
+  font: normal normal normal 17px/20px Raleway;
+  color: $accent-grey;
+  margin-top: 19px;
+}
+
+.benefits {
+  width: 100vw;
+  height: 1395px;
+  display: flex;
+  flex-direction: column;
+  background: $accent-light-grey 0 0 no-repeat padding-box;
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.benefit-one {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 1124px;
+  height: 370px;
+  background: $color-light 0 0 no-repeat padding-box;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  margin-top: 105px;
+  padding: 38px 71px 38px 35px;
+}
+
+.benefits-text {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center
+}
+
+.benefits-text h3 {
+  text-align: left;
+  font: normal normal normal 36px/42px Raleway;
+  color: $color-dark;
+}
+
+.benefits-text p {
+  width: 416px;
+  margin-top: 30px;
+  text-align: left;
+  font: normal normal normal 16px/22px Open Sans;
+  color: $color-dark;
+}
+
+.horizontal-line {
+  border-bottom: 4px solid $accent-red;
+  width: 328px;
+  margin-top: 50px;
+}
+
+.benefits-macbook {
+  position: relative;
+}
+
+.benefits-macbook img {
+  background-size: cover;
+  height: 219px;
+  position: relative;
+  top: 35px;
+  z-index: 2;
+  margin-left: 50px;
+}
+
+.geo-red {
+  width: 170px;
+  height: 170px;
+  position: absolute;
+  z-index: 1;
+  left: 270px;
+  top: 5px;
+  transform: rotate(45deg);
+  border-radius: 41px;
+  background-color: $accent-red;
+}
+
+.benefit-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 1124px;
+  height: 370px;
+  background: $color-light 0 0 no-repeat padding-box;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  margin-top: 37px;
+  padding: 69px 20px 70px 70px;
+}
+
+.benefits-iphone {
+  position: relative;
+}
+
+.benefits-iphone img {
+  background-size: cover;
+  height: 320px;
+  position: relative;
+  top: 20px;
+  left: 5px;
+  z-index: 2;
+}
+
+.geo-blue {
+  height: 320px;
+  width: 320px;
+  border-radius: 50%;
+  top: 0;
+  background-color: #07ACE6;
+  position: absolute;
+  z-index: 1;
+}
+
+.benefits-text.two {
+  width: 416px;
+}
+
+.benefits-text h3 {
+  width: 246px;
+}
+
+.horizontal-line.blue {
+  border-bottom: 4px solid #07ACE6;
+}
+
+.benefit-three {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1124px;
+  height: 370px;
+  margin-top: 38px;
+}
+
+.benefits-text.three {
+  width: 623px;
+  height: 370px;
+  background: $color-light 0 0 no-repeat padding-box;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  padding: 0 36px;
+  box-sizing: border-box;
+}
+
+.benefits-text.three h3 {
+  width: 348px;
+}
+
+.benefits-text.three p {
+  width: 553px;
+}
+
+.horizontal-line.green {
+  border-bottom: 4px solid $accent-green;
+}
+
+.benefits-trumpet {
+  width: 440px;
+  height: 370px;
+  background-color: $accent-green;
+  position: relative;
+  z-index: 1;
+}
+
+.benefits-trumpet img {
+  width: 295px;
+  height: 207px;
+  background-size: cover;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-35%);
+  left: 15%;
+}
+
+.bottom-section {
+  width: 100vw;
+  height: calc(1395px - 89px);
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 160px;
+}
+
+.pricing > p {
+  margin: 100px auto 50px;
+  text-align: center;
+  font: normal normal normal 36px/42px Raleway;
+  color: $color-dark;
+}
+
+.price-list-container {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.price-list {
+  width: 372px;
+  height: 461px;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: $color-light 0 0 no-repeat padding-box;
+  border: 1px solid $accent-red;
+  border-radius: 18px;
+  box-sizing: border-box;
+  padding-top: 34px;
+}
+
+.price-list h4 {
+  text-align: left;
+  font: normal normal bold 20px/20px Raleway;
+  color: #13253B;
+  margin-bottom: 20px;
+}
+
+.price-list .cost {
+  text-align: left;
+  font: normal normal 300 46px/46px Open Sans;
+  color: $accent-red;
+  margin-bottom: 69px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.price-list ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.price-list li {
+  text-align: center;
+  font: normal normal normal 14px/41px Open Sans;
+  color: #000000;
+}
+
+.pricing-item::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  background-image: url("../images/checkmark-1.svg");
+  margin-right: 10px;
+}
+
+.pricing-item-x::before {
+  background-image: url("../images/close.svg");
+}
+
+
+.price-list a {
+  position: absolute;
+  z-index: 2;
+  top: 100%;
+  transform: translateY(-50%);
+  font: normal normal bold 13px/13px Open Sans;
+  text-decoration: none;
+  color: $color-light;
+  padding: 16px 57px;
+  background-color: #EB476E;
+  border-radius: 23px;
+}
+
+.price-list.pro {
+  width: 405px;
+  height: 500px;
+  margin: 0 59px;
+  background: $color-light 0 0 no-repeat padding-box;
+  box-shadow: 5px 10px 27px #07ACE629;
+  border: 1px solid #07ACE6;
+  border-radius: 18px;
+}
+
+.cost.blue {
+  color: #07ACE6;
+  margin-bottom: 20px;
+}
+
+.limited-offer {
+  font: normal normal bold 12px/12px Raleway;
+  color: #13253B;
+  margin-bottom: 61px;
+}
+
+.button-begin.blue {
+  background: #07ACE6 0 0 no-repeat padding-box;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 23px;
+}
+
+.price-list.premium {
+  border: 1px solid #55DFB4;
+}
+
+.cost.green {
+  color: #55DFB4;
+  margin-bottom: 20px;
+}
+
+.button-begin.green {
+  background: #55DFB4 0 0 no-repeat padding-box;
+}
+
+.contact-form, .contact-us {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form {
+  width: 896px;
+  margin: 0 auto;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  width: 345px;
+  margin-right: 114px;
+}
+
+.contact-us h5 {
+  text-align: left;
+  font: normal normal normal 49px/49px Raleway;
+  color: #000000;
+  margin-bottom: 22px;
+}
+
+.contact-us > p {
+  text-align: left;
+  font: normal normal normal 16px/16px Open Sans;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+}
+
+.email-info, .call-info {
+  display: flex;
+  align-items: center;
+  height: 27px;
+}
+
+.email-info {
+  margin-right: 20px;
+}
+
+.email-info img, .call-info img {
+  margin-right: 10px;
+}
+
+.email-info p, .call-info p {
+  text-align: left;
+  font: normal normal 400 16px/22px Open Sans;
+  color: #A5A5A5;
+}
+
+.form {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form > label {
+  text-align: left;
+  font: normal normal bold 11px/15px Open Sans;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #08A6E4;
+}
+
+.form > input {
+  border: none;
+  box-sizing: border-box;
+  padding-top: 15px;
+  border-bottom: 1px solid #95989A;
+  height: 43px;
+  text-align: left;
+  font: normal normal 400 16px/22px Open Sans;
+  color: #696969;
+}
+
+.form > input:focus {
+  background-color: rgba(8, 166, 228, 0.06);
+  outline: none;
+  text-align: left;
+  font: normal normal 400 16px/22px Open Sans;
+  color: #696969;
+}
+
+.form > label:nth-of-type(2) {
+  margin-top: 42px;
+}
+
+.consent input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  margin-right: 10px;
+}
+
+.consent {
+  margin-top: 30px;
+  display: flex;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.form .consent {
+  text-align: left;
+  font: normal normal normal 12px/17px Open Sans;
+  text-transform: none;
+  letter-spacing: 0;
+  color: #707070;
+}
+
+.consent span {
+  height: 24px;
+  flex-shrink: 0;
+  flex-basis: 24px;
+  border: 1px solid #95989A;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.consent input:checked + span {
+  background: url("../images/checkmark.svg") no-repeat center center;
+}
+
+.send-form {
+  align-self: flex-end;
+  width: 226px;
+  height: 57px;
+  text-align: center;
+  box-sizing: border-box;
+  font: normal normal bold 13px/18px Open Sans;
+  color: $color-light;
+  padding: 20px 97px;
+  background: #08A6E4 0 0 no-repeat padding-box;
+  box-shadow: 5px 10px 14px #07ACE629;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+}
+
+.footer {
+  width: 100%;
+  height: 89px;
+  display: flex;
+  justify-content: center;
+  background: #F7F7F7 0 0 no-repeat padding-box;
+  box-shadow: 0 -5px 40px #00000029;
+}
+
+.footer-container {
+  margin: 0 auto;
+  width: 1352px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.logo-footer {
+  text-align: left;
+  font: normal normal 300 26px/30px Raleway;
+  color: #08A6E4;
+  margin-bottom: 6px;
+}
+
+.copyright {
+  text-align: left;
+  font: normal normal normal 11px/15px Open Sans;
+  color: #A5A5A5;
+}
+
+.container-right-side {
+  display: flex;
+  align-items: center;
+}
+.container-right-side img {
+  margin-left: 20px;
+}
+
+
